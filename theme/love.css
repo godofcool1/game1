@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: arial;
+    color: rgb( 11, 86, 117 );
+}
+
+body {
+    
+    background-repeat: no-repeat;
+    font-family: arial;
+    margin: 0;
+    padding: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    font-family: arial;
+    font-size: 12px;
+    padding-left: 10px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+a:link {
+    color: rgb( 233, 73, 154 );
+}
+a:visited {
+    color: rgb( 110, 30, 71 );
+}
+a:hover {
+    color: rgb( 252, 207, 230 );
+}
+
+/* the canvas *must not* have any border or padding, or mouse coords will be wrong */
+
+
+    center > div {
+        display: grid;
+        place-items: center;
+        height:  100dvh;
+    }
+
+    center {
+        touch-action: none;
+        user-select: none;
+        overflow: hidden;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+
+#canvas {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    object-fit: contain;
+    width: min(100dvw, calc(100dvh * (4 / 3))) !important;
+    height: min(100dvh, calc(100dvw * (3/4))) !important;
+
+    padding-right: 0;
+    display: block;
+    border: 0px none;
+    visibility: hidden;
+}
