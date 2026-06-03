@@ -37,8 +37,8 @@ Module.expectedDataFileDownloads++;
       // Split fetch: download part1 and part2, then concatenate into one ArrayBuffer
       var part1Name = packageName + '.part1';
       var part2Name = packageName + '.part2';
-      var part1Size = 14103178;
-      var part2Size = 14103178;
+      var part1Size = 14103228;
+      var part2Size = 14103228;
 
       function trackProgress(url, loaded, total) {
         if (!Module.dataFileDownloads) Module.dataFileDownloads = {};
@@ -306,6 +306,6 @@ Module.expectedDataFileDownloads++;
     }
 
   }
-  loadPackage({"package_uuid":"26a809ba-1d8d-49f7-8a21-d04771523502","remote_package_size":28206356,"files":[{"filename":"/game.love","crunched":0,"start":0,"end":28206356,"audio":false}]});
+  loadPackage({"package_uuid":"26a809ba-1d8d-49f7-8a21-d04771523502","remote_package_size":28206456,"files":[{"filename":"/game.love","crunched":0,"start":0,"end":28206456,"audio":false}]});
 
 })();
